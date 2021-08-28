@@ -9,22 +9,9 @@ if(isset($_POST))
 	$sub =$_POST["mSub"];
 	$message = $_POST["Mmessage"];
 	
-	var_dump($_POST);
-	$qur ="INSERT INTO messages
-(Name
- ,Email
- ,subject
- ,message
-
-)
-VALUES
-('$name' -- Name - VARCHAR(50)
- ,'$email' -- Email - VARCHAR(50)
- ,'$sub' -- subject - VARCHAR(255)
- ,'$message' -- message - VARCHAR(255)
-
-);";
-	//$qur ="INSERT INTO `messages`(`Name`, `Email`, `subject`, `message`) VALUES('$name','$email','$sub','$message')";
+	//var_dump($_POST);
+	
+	$qur ="INSERT INTO `messages`(`Name`, `Email`, `subject`, `message`) VALUES('$name','$email','$sub','$message')";
 	
 	
 	

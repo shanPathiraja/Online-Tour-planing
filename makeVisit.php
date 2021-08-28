@@ -18,16 +18,16 @@
 	
 	<?php 
 	include("include/connection.php"); 
-	//$_POST['planID'] =7;
+	$_POST['planID'] =7;
 	
 	
 	
 	
 	
-	//$_POST['place']="katharagama";
-	//$_POST['nd']="3";
+	$_POST['place']="katharagama";
+	$_POST['nd']="3";
 	
-	if(isset($_GET['id'])){
+	if(isset($_POST['planID'])){
 		
 		
 		
@@ -75,7 +75,7 @@ FROM plans WHERE ID =$pid;";
 	  
 	  
 	  <div class="offset-xl-1 col-xl-11">
-	  <form class="form-check" onSubmit="return false" >
+	  <form class="form-check">
 		  <div class="col-md-2 col-xl-6 offset-xl-2 mt-2 pt-4">
 		  
 		 
@@ -463,7 +463,7 @@ FROM foods";
         success: function (data) {
             alert(data)
 			
-			window.location.href='index.php';
+			//window.location.href='index.php';
 			
         },
         cache: false,

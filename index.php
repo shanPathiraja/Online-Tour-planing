@@ -76,12 +76,6 @@
 				<!-- Intro Item -->
 
 				<?php 
-			$qur = "UPDATE meta 
-			SET value = value+1 -- value - VARCHAR(255)
-			WHERE
-			  name = 'visiters' -- id - INT(11) NOT NULL
-			;";
-			mysqli_query($dbcon,$qur);
 				//query aka liyala tiyenne udama tiyana feathure place 3 ana vidiyata
 				$sql ="SELECT
   places.id,
@@ -254,7 +248,7 @@ ORDER BY places.id DESC LIMIT 0 ,3";
 							<div class="col-lg-6">
 								<div class="offers_image_container">
 									<!-- Image by https://unsplash.com/@kensuarez -->
-									<div class="offers_image_background" style="height: 200px;background-image:url('uploads/planThumb/<?php echo($row[3]); ?>')"></div>
+									<div class="offers_image_background" style="background-image:url('uploads/planThumb/<?php echo($row[3]); ?>')"></div>
 									<div class="offer_name"><a href="#"><?php echo($row[0]) ?></a></div>
 								</div>
 							</div>
@@ -323,7 +317,7 @@ ORDER BY comment.id DESC";
 							<!-- Testimonial Item -->
 							<div class="owl-item">
 								<div class="test_item">
-									<div class="test_image bg-info" ><img style="height: 400px" src="./uploads/commentImage/<?php if($row[5]!=""){ echo($row[5]);}else{echo('logo.png');} ?>" alt="https://unsplash.com/@anniegray"></div>
+									<div class="test_image bg-info" ><img src="./uploads/commentImage/<?php if($row[5]!=""){ echo($row[5]);}else{echo('logo.png');} ?>" alt="https://unsplash.com/@anniegray"></div>
 									<div class="test_icon"><img src="images/backpack.png" alt=""></div>
 									<div class="test_content_container">
 										<div class="test_content">
@@ -485,14 +479,14 @@ ORDER BY comment.id DESC";
 			var extention = imageLow.substring(imageLow.lastIndexOf('.')+1);
 			
 			console.log(extention);
-			/*if($.inArray(extention,validExtensions)){
+			if($.inArray(extention,validExtensions)){
 				
 			}else{
 				alert("extention not support");
 				return null;
 				
 			}
-			*/
+			
 			
 		
 			var formData = new FormData();

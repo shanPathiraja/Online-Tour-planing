@@ -16,7 +16,6 @@
 		<div class="row">
 		<div class="col-9 col-xl-2">
 				<?php
-			//error_reporting(E_ALL); ini_set('display_errors', 1);
 		include("../../include/connection.php");
 	include("../sidebar.php");
 	?>

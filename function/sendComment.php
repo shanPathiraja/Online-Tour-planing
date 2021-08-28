@@ -19,7 +19,7 @@ if(isset($_POST)){
       $file_type=$_FILES['image']['type'];
 		
 	$path_info = pathinfo($_FILES['image']['name']);
-		//echo($path_info['extension']);
+		echo($path_info['extension']);
 		$file_ext =$path_info['extension'];
 		$file_name = $t.".".$file_ext;
 		move_uploaded_file($file_tmp,"../uploads/commentImage/".$file_name);
@@ -33,7 +33,7 @@ if(isset($_POST)){
  ,image
 )
 VALUES
-('$Name' -- Cus_name - VARCHAR(255)
+('$message' -- Cus_name - VARCHAR(255)
  ,NOW() -- date - DATETIME
  ,'$subjecr' -- title - VARCHAR(255)
  ,'$message' -- Comment - VARCHAR(255)
@@ -42,9 +42,9 @@ VALUES
 		
 		if(mysqli_query($dbcon,$qur)){
 			
-			echo(" Comment successfully Posted");
+			echo("Place successfully added");
 		}else{
-			echo("Failed to post Comment...!");
+			echo("Failed to add place...!");
 		}
 		
 		

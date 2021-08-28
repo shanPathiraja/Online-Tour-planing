@@ -2,11 +2,7 @@
 	include("../../../include/connection.php");
 	if(isset($_FILES["image"])){
 		var_dump($_POST);
-      $title = $_POST["Place_Name"];
-      $title2 = $_POST["Place_Name2"];
-      $link =$_POST["Place_link"];
-      $btn = $_POST["Place_btn"];
-
+		$title = $_POST["Place_Name"];
 		$t = time();
       $errors= array();
       $file_name = $_FILES['image']['name'];
@@ -33,14 +29,12 @@
       if(empty($errors)==true){
          move_uploaded_file($file_tmp,"../../../uploads/".$file_name);
 		  
-		   $sql = "INSERT INTO `mainslideshow`(`header`, `header2`, `image`, `buttonName`, `Link`) VALUES ('$title','$title2','$file_name','$btn','$link')";
+		   $sql = "INSERT INTO `mainslideshow`(`header`, `header2`, `image`, `buttonName`, `Link`) VALUES ('$title','ashoke group','$file_name','View more','aa')";
 		  
 		  
 		  if(mysqli_query($dbcon,$sql))
 		  {
-           echo "Success";
-           
-           header("Location: ../manageSlideShow.php");
+			  echo "Success";
 		  }else{
 			  echo $sql.mysqli_error($sql);
 		  }

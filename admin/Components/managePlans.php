@@ -345,7 +345,7 @@ ORDER BY plans.ID DESC";
 			}
 			console.log(parr);
 			
-			//alert("aa");
+			alert("aa");
 			var form = document.getElementById("data")
 			var validExtensions = ['jpg','png','jpeg'];
 			console.log(imageFile);
@@ -368,13 +368,13 @@ ORDER BY plans.ID DESC";
 			var extention = imageLow.substring(imageLow.lastIndexOf('.')+1);
 			
 			console.log(extention);
-			/*if($.inArray(extention,validExtensions)){
+			if($.inArray(extention,validExtensions)){
 				
 			}else{
 				alert("extention not support");
 				return null;
 				
-			}*/
+			}
 			
 			
 			var jsonArr = JSON.stringify(parr);

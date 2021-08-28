@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Ashok group admin panel</title>
+<title>Untitled Document</title>
 	<link href="../css/myStyle.css" rel"stylesheet" type="text/css">
     <link rel="stylesheet" href="../includes/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../includes/fontawesome-free-5.12.0-web/css/all.css">
@@ -31,8 +31,6 @@
                                 <p class="form-signin">
                                 <form method="post" action="../Components/functions/mainSlideShowFunc.php" enctype="multipart/form-data">
                                     <input type="text" name="Place Name" id="txtplaceName" class="form-control" placeholder="Title" />
-                                    <br/>
-                                    <input type="text" name="Place Name2" id="txtplaceName2" class="form-control" placeholder="scond Title" />
 									<label for="slctRating">Select Rating</label>
 									<select class="form-control" id="slctRating">
       <option>1</option>
@@ -45,9 +43,6 @@
 									<label for="taDiscription">Discription</label>
     <textarea class="form-control" id="taDiscription" rows="3"></textarea>
                                     <br />
-                                    <input type="text" name="Place btn" id="txtslidebtn" class="form-control" placeholder="Button name" />
-                                    <br>
-                                    <input type="text" name="Place link" id="txtslidelink" class="form-control" placeholder="Paste Link here" />
 									 <label for="myfile">Chose image</label>
                 <input type="file" name="image" class="form-control-file" id="myfile"/>  
 									<br/>
@@ -121,7 +116,7 @@
                     <td scope="row"><?php echo($row[1]); ?></td>
                     <td scope="row"><?php echo($row[2]); ?></td>
                     <td scope="row"><?php echo($row[3]);?></td>
-                    <td scope="row"><img src="../../uploads/<?php echo($row[3]); ?>" width="100"></td>
+                    <td scope="row"><img src="../../uploads/<?php echo($row[4]); ?>" width="100"></td>
                     <td scope="row"><button class="btn btn-danger"id="delbtn"value="<?php echo($row[0]); ?>" onClick="delReq(this.value)">Remove</button></td>
 
                 </tr>

@@ -22,7 +22,7 @@ if(isset($_POST)){
       $file_type=$_FILES['image']['type'];
 		
 	$path_info = pathinfo($_FILES['image']['name']);
-		//echo($path_info['extension']);
+		echo($path_info['extension']);
 		$file_ext =$path_info['extension'];
 		$file_name = $t.".".$file_ext;
 		move_uploaded_file($file_tmp,"../../../uploads/planThumb/".$file_name);
@@ -50,7 +50,7 @@ VALUES
 		if(mysqli_query($dbcon,$qur)){
 			
 			$latestid = mysqli_insert_id($dbcon);
-			//var_dump($place);
+			var_dump($place);
 			$len = count($place);
 			
 			for($x=0;$x<$len;$x++){

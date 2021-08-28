@@ -3,7 +3,7 @@
 <?php
 include("../../include/connection.php");
 
-//$_GET["id"] =1;
+$_GET["id"] =1;
 
 		$id = $_GET["id"];
 

@@ -28,7 +28,7 @@
 							<p class="footer_about_text">Plan your next trip, tour or vacation in Sri Lanka with Ashok Group. we can help you design the perfect vacation. Use Ashok Group Travel Planner to get a personalized day by day itinerary for your vacation.</p>
 							<ul class="footer_social_list">
 								<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-								<li class="footer_social_item"><a href="https://www.facebook.com/Ashok-Group-113905527016750/"><i class="fa fa-facebook-f"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
 								
 								<li class="footer_social_item"><a href="#"><i class="fa fa-whatsapp"></i></a></li>
 							</ul>
@@ -77,7 +77,7 @@
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
-									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">ashokgroupdematawa@gmail.com</a></div>
+									<div class="contact_info_text"><a href="mailto:contactme@gmail.com?Subject=Hello" target="_top">ashokgroup@gmail.com</a></div>
 								</li>
 								<li class="contact_info_item d-flex flex-row">
 									<div><div class="contact_info_icon"><img src="images/planet-earth.svg" alt=""></div></div>

@@ -35,34 +35,6 @@
 			
 	?>
 		
-<?php
-	$qur ="  SELECT( SELECT
-	COUNT(places.id) AS expr1
-  
-  FROM places)
-	,
-  (SELECT
-	COUNT(plans.ID) AS expr2
-  
-  FROM plans),
-  (SELECT
-  value
-  FROM meta WHERE name ='visiters');";
-
-$res = mysqli_query($dbcon,$qur);
-$numPlace=0;
-$numPlan =0;
-$numVisiters=0;
-while($row = mysqli_fetch_row($res)){
-
-$numPlace = $row[0];
-$numPlan =$row[1];
-$numVisiters = $row[2];
-}
-
-?>
-
-
 		</div>
 	  <div class="col-xl-9 offset-xl-0">
 		
@@ -79,7 +51,7 @@ $numVisiters = $row[2];
   <div class="card-body align-content-center">
 	  <center>
 	  	  <h3>Total Visiters</h3>
-    <h2><?php echo($numVisiters); ?></h2>
+    <h2>100</h2>
 	  </center>
 
   </div>
@@ -91,7 +63,7 @@ $numVisiters = $row[2];
   <div class="card-body align-content-center">
 	  <center>
 	  	  <h3>Number of places</h3>
-    <h2><?php echo($numPlace); ?></h2>
+    <h2>100</h2>
 	  </center>
 
   </div>
@@ -103,7 +75,7 @@ $numVisiters = $row[2];
   <div class="card-body align-content-center">
 	  <center>
 	  	  <h3>Number of Plans</h3>
-    <h2><?php echo($numPlan); ?></h2>
+    <h2>100</h2>
 	  </center>
 
   </div>

@@ -172,8 +172,7 @@ img.hover-shadow {
                 $sql ="SELECT
   placessimage.ID,
   placessimage.PlaceID,
-  placessimage.image,
-  placessimage.Discription
+  placessimage.image
 FROM placessimage
 WHERE placessimage.PlaceID =$id";
 
@@ -229,7 +228,7 @@ $count =0;
 				
                     ?>
     <div class="column">
-      <img class="demo cursor" src="uploads/placeImage/<?php echo($row[2]); ?>" style="width:100%" onclick="currentSlide(<?php echo($c2); ?>)" alt="<?php echo($row[3]); ?>">
+      <img class="demo cursor" src="uploads/placeImage/<?php echo($row[2]); ?>" style="width:100%" onclick="currentSlide(<?php echo($c2); ?>)" alt="Nature and sunrise">
     </div>
 	  
 	  <?php } ?>
